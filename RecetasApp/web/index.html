@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plataforma de Recetas</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<header>
+<h1>Plataforma Colaborativa de Recetas</h1>
+<p>Planifica tus comidas según ingredientes y presupuesto</p>
+</header>
+
+<section>
+
+<h2>Registrar Receta</h2>
+
+<form id="recetaForm">
+
+<label>Nombre de la receta</label>
+<input type="text" id="nombre" required>
+
+<label>Ingredientes</label>
+<textarea id="ingredientes" required></textarea>
+
+<label>Costo por porción</label>
+<input type="number" id="costo">
+
+<label>Dificultad</label>
+<select id="dificultad">
+<option>Fácil</option>
+<option>Media</option>
+<option>Difícil</option>
+</select>
+
+<label>Pasos</label>
+<textarea id="pasos"></textarea>
+
+<button type="button" onclick="registrarReceta()">Guardar receta</button>
+
+</form>
+
+</section>
+
+<section>
+
+<h2>Buscar recetas por ingredientes</h2>
+
+<input type="text" id="buscarIngrediente" placeholder="Ej: pollo, arroz">
+<button onclick="buscarRecetas()">Buscar</button>
+
+<div id="resultados"></div>
+
+</section>
+
+<section>
+
+<h2>Planificador semanal</h2>
+
+<div class="semana">
+
+<div class="dia" ondrop="drop(event)" ondragover="allowDrop(event)">Lunes</div>
+<div class="dia" ondrop="drop(event)" ondragover="allowDrop(event)">Martes</div>
+<div class="dia" ondrop="drop(event)" ondragover="allowDrop(event)">Miércoles</div>
+<div class="dia" ondrop="drop(event)" ondragover="allowDrop(event)">Jueves</div>
+<div class="dia" ondrop="drop(event)" ondragover="allowDrop(event)">Viernes</div>
+<div class="dia" ondrop="drop(event)" ondragover="allowDrop(event)">Sábado</div>
+<div class="dia" ondrop="drop(event)" ondragover="allowDrop(event)">Domingo</div>
+
+</div>
+
+<button onclick="generarLista()">Generar lista de compras</button>
+
+<div id="listaCompras"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
