@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Nueva Receta</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+
+<header>
+    <h1>Nueva Receta</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="dashboard.html">Panel Chef</a>
+    </nav>
+</header>
+
+
+<main>
+    <section class="formulario">
+        <h2>Crear Receta</h2>
+        <form>
+            <p>Nombre: <input type="text" name="nombre"></p>
+            <p>Dificultad: 
+                <select name="dificultad">
+                    <option>Fácil</option>
+                    <option>Media</option>
+                    <option>Difícil</option>
+                </select>
+            </p>
+            <p>Costo (₡): <input type="number" name="costo"></p>
+            <p>Ingredientes:<br>
+                <textarea name="ingredientes"></textarea>
+            </p>
+            <p>Pasos:<br>
+                <textarea name="pasos"></textarea>
+            </p>
+            <button type="submit">Publicar Receta</button>
+        </form>
+    </section>
+</main>
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+  /* Configuracion General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f0; /* Color Hueso/Neutro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+/* Encabezado y Navegacion */
+header {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #e0e0d1;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #4a4a42;
+}
+
+
+nav {
+    margin-top: 10px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #6b6b5e;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: #a3a375; /* Un tono oliva suave para el hover */
+}
+
+
+/* Contenedor Principal */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+/* Estilo para las Secciones y Articulos (Tarjetas) */
+section {
+    margin-bottom: 30px;
+}
+
+
+.recetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.receta, .revision {
+    border: 1px solid #e0e0d1;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.receta img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+
+/* Botones */
+button, .receta a {
+    display: inline-block;
+    background-color: #8c8c73;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+
+button:hover {
+    background-color: #73735c;
+}
+
+
+/* Formularios */
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
